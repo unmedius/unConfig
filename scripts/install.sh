@@ -9,15 +9,15 @@ sudo pacman -S hyprpaper waybar polkit polkit-kde-agent zsh btop neovim turbosta
 
 #test
 echo $confpath
-echo $cur
+echo $curdir
 
 # remove current configs
 rm -rf $confpath/hypr $confpath/kitty $confpath/waybar
 
 # links to conf
-ln -s $HOME/$cur/hypr $confpath
-ln -s $HOME/$cur/kitty $confpath
-ln -s $HOME/$cur/waybar $confpath
+ln -s $HOME/$curdir/hypr $confpath
+ln -s $HOME/$curdir/kitty $confpath
+ln -s $HOME/$curdir/waybar $confpath
 
 # echo "The script you are running has:"
 # echo "basename: [$(basename "$0")]"
