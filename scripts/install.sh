@@ -5,6 +5,8 @@ confpath=$HOME/.config
 curdir=$(dirname "$(dirname "$0")")
 cur=$(basename $curdir)
 
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 sudo pacman -S hyprpaper waybar polkit polkit-kde-agent zsh btop neovim turbostat firefox qpwgraph flatpak ttf-font-awesome pamixer qbittorrent
 
 #test
