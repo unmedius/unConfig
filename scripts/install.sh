@@ -1,19 +1,25 @@
 #!/bin/bash
 
-# Update system
-sudo pacman -Suy
+# Function to run installer scripts
+run_installers() {
+    local installer_dir="$1"
 
-# Define the path to the installer scripts
-installer_dir="$(dirname "$(readlink -f "$0")")/installer"
+    echo "Running installer scripts..."
+    "$installer_dir/install_ohmyzsh.sh"
+    "$installer_dir/install_packages.sh"
+    "$installer_dir/install_dotfiles.sh"
+}
 
-# Run installation scripts
-"$installer_dir/install_yay.sh"
+# Main script execution
+main() {
+    # Define the path to the installer scripts
+    local installer_dir="$(dirname "$(readlink -f "$0")")/installer"
 
-# Update system
-yay -Suy
+    # Run installer scripts
+    run_installers "$installer_dir"
 
-"$installer_dir/install_ohmyzsh.sh"
-"$installer_dir/install_packages.sh"
-"$installer_dir/install_dotfiles.sh"
+    echo "All setup tasks completed."
+}
 
-echo "All setup tasks completed."
+# Execute main function
+main
