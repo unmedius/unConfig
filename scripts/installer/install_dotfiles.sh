@@ -22,6 +22,7 @@ config_items=(
     "kdeglobals"
     "zshrc"
     "dunst"
+    "MangoHud"
 )
 
 # Function to check if any configuration directories exist

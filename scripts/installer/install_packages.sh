@@ -2,15 +2,16 @@
 
 # Define common packages
 common_packages=(
-    hyprland wofi kitty dolphin xdg-desktop-portal-hyprland qt5-wayland qt6-wayland grim slurp
+    hyprland wofi kitty dolphin xdg-desktop-portal-hyprland  qt5-wayland qt6-wayland grim slurp
     polkit polkit-kde-agent sddm hyprpaper waybar zsh neovim flatpak ttf-font-awesome pamixer
     qbittorrent pavucontrol btop qpwgraph htop vlc brightnessctl unzip ark blueman bluez-utils
-    solaar qpwgraph exa bat ripgrep fzf zoxide entr mc gnome-themes-extra archlinux-xdg-menu
+    solaar qpwgraph exa bat ripgrep fzf zoxide entr mc gnome-themes-extra archlinux-xdg-menu inxi
+    inotify-tools xdg-desktop-portal-gtk
 )
 
 common_aur_packages=(
     ntfs-automount google-chrome-wayland-vulkan hyprshot tela-circle-icon-theme-dracula
-    game-devices-udev zsh-theme-powerlevel10k-git 
+    game-devices-udev zsh-theme-powerlevel10k-git espeak selectdefaultapplication-git
 )
 
 # Define packages for Intel CPUs
@@ -39,7 +40,7 @@ declare -A user_specific_packages=(
 )
 
 declare -A user_specific_aur_packages=(
-    [unmedius]="syncthingtray-qt6 sunshine vscodium battop"
+    [unmedius]="syncthingtray-qt6 sunshine-bin vscodium battop"
     [jtv]=""
 )
 

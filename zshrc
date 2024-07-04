@@ -114,7 +114,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-  alias hyprmons="./PycharmProjects/hyprmons/dist/hyprmons"
+  alias hyprmons="$HOME/scripts/hyprmons"
+  alias update="$HOME/unConfig/scripts/updater.sh"
+
+# Ollama specific
+  alias codewithme="ollama run deepseek-coder-v2"
+  alias talkwithme="ollama run llama3"
+  alias talkwithmedirty="ollama run dolphin-mixtral:8x7b"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
