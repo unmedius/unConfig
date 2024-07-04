@@ -6,7 +6,7 @@ common_packages=(
     polkit polkit-kde-agent sddm hyprpaper waybar zsh neovim flatpak ttf-font-awesome pamixer
     qbittorrent pavucontrol btop qpwgraph htop vlc brightnessctl unzip ark blueman bluez-utils
     solaar qpwgraph exa bat ripgrep fzf zoxide entr mc gnome-themes-extra archlinux-xdg-menu inxi
-    inotify-tools xdg-desktop-portal-gtk
+    inotify-tools xdg-desktop-portal-gtk pipewire wireplumber
 )
 
 common_aur_packages=(
