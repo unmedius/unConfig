@@ -6,25 +6,22 @@ list_updates() {
     local updates
     echo -n "Checking for updates using $pm... "
     case "$pm" in
-        pacman)
-            updates=$(pacman -Qu)
-            ;;
         flatpak)
-            updates=$(flatpak update 2>&1)
-            if [[ "$updates" == *"Nothing to do."* ]]; then
-                updates=""
+            updates=$(flatpak remote-ls --updates 2>&1)
+            if [[ -z "$updates" ]]; then
+                updates="Nothing to do."
             fi
             ;;
         yay)
-            updates=$(yay -Qu)
+            updates=$(yay -Qu 2>/dev/null)
             ;;
         *)
             echo "Unknown package manager: $pm"
-            exit 1
+            return 1
             ;;
     esac
 
-    if [ -z "$updates" ]; then
+    if [ -z "$updates" ] || [[ "$updates" == "Nothing to do." ]]; then
         echo "No updates available."
     else
         echo "Updates available:"
@@ -38,10 +35,9 @@ update_packages() {
     local pm="$1"
     echo "Updating packages using $pm..."
     case "$pm" in
-        pacman) sudo pacman -Syu --noconfirm ;;
-        flatpak) flatpak update ;;
-        yay) yay -Suy --noconfirm ;;
-        *) echo "Unknown package manager: $pm"; exit 1 ;;
+        flatpak) flatpak update -y ;;
+        yay) yay -Syu --noconfirm ;;
+        *) echo "Unknown package manager: $pm"; return 1 ;;
     esac
 }
 
@@ -49,7 +45,7 @@ update_packages() {
 any_updates=false
 
 # List available updates and prompt user for confirmation
-for pm in pacman flatpak yay; do
+for pm in flatpak yay; do
     if command -v $pm &> /dev/null; then
         list_updates "$pm"
     else
@@ -63,19 +59,13 @@ if ! $any_updates; then
 fi
 
 read -p "Do you want to update all packages? (y/n) " choice
-if [[ "$choice" == [yY] ]]; then
-    # Update Pacman and Flatpak repositories
-    for pm in pacman flatpak; do
-        update_packages "$pm"
+if [[ "$choice" =~ ^[yY]$ ]]; then
+    # Update Flatpak and Yay repositories
+    for pm in flatpak yay; do
+        if command -v $pm &> /dev/null; then
+            update_packages "$pm"
+        fi
     done
-
-    # Check for yay and update AUR packages if available
-    if command -v yay &> /dev/null; then
-        echo "Updating AUR packages using yay..."
-        update_packages "yay"
-    else
-        echo "Error: yay not installed. Install it first: 'yay -S aur/yay'"
-    fi
 else
     echo "Update cancelled by user."
 fi
