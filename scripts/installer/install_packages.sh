@@ -97,7 +97,7 @@ update_and_install_packages() {
     for package in "${packages[@]}"; do
         if ! $package_manager -Qi "$package" &> /dev/null; then
             echo "Installing $package..."
-            sudo $package_manager -S "$package" --noconfirm
+            $package_manager -S "$package" --noconfirm
         else
             echo "$package is already installed."
         fi
@@ -140,7 +140,7 @@ main() {
     fi
 
     # Update system with pacman and install packages
-    update_and_install_packages "pacman" "${packages[@]}"
+    update_and_install_packages "sudo pacman" "${packages[@]}"
 
     # Ensure 'yay' is installed for AUR packages
     if ! command -v yay &> /dev/null; then
