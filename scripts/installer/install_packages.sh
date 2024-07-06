@@ -41,19 +41,19 @@ declare -A user_specific_packages=(
 )
 
 declare -A user_specific_aur_packages=(
-    [unmedius]="syncthingtray-qt6 sunshine-bin vscodium battop"
+    [unmedius]="syncthingtray-qt6 vscodium"
     [jtv]=""
 )
 
 # Define machine-specific packages
 declare -A machine_specific_packages=(
-    [unArch]="package1 package2"
-    [unArchLaptop]="package3 package4"
+    [unArch]=""
+    [unArchLaptop]=""
 )
 
 declare -A machine_specific_aur_packages=(
-    [unArch]="aur_package1 aur_package2"
-    [unArchLaptop]="aur_package3 aur_package4"
+    [unArch]="sunshine-bin davinci-resolve obs-studio-bin"
+    [unArchLaptop]="battop"
 )
 
 # Determine the current user and machine
