@@ -2,16 +2,17 @@
 
 # Define common packages
 common_packages=(
-    hyprland wofi kitty dolphin xdg-desktop-portal-hyprland qt5-wayland qt6-wayland grim slurp
+    hyprland kitty dolphin xdg-desktop-portal-hyprland qt5-wayland qt6-wayland grim slurp
     polkit polkit-kde-agent sddm hyprpaper waybar zsh neovim flatpak ttf-font-awesome pamixer
     qbittorrent pavucontrol btop qpwgraph htop vlc brightnessctl unzip ark blueman bluez-utils
     solaar qpwgraph exa bat ripgrep fzf zoxide entr mc gnome-themes-extra archlinux-xdg-menu inxi
-    inotify-tools xdg-desktop-portal-gtk pipewire wireplumber swayidle
+    inotify-tools xdg-desktop-portal-gtk pipewire wireplumber swayidle rofi
 )
 
 common_aur_packages=(
     ntfs-automount google-chrome-wayland-vulkan hyprshot tela-circle-icon-theme-dracula
     game-devices-udev zsh-theme-powerlevel10k-git espeak selectdefaultapplication-git
+    idlehack-git
 )
 
 # Define CPU and GPU specific packages
@@ -36,7 +37,7 @@ declare -A gpu_aur_packages=(
 
 # Define user-specific packages
 declare -A user_specific_packages=(
-    [unmedius]="ntfs-3g syncthing steam mangohud goverlay obsidian telegram-desktop scrcpy v4l2loopback-dkms gamescope gamemode"
+    [unmedius]="ntfs-3g syncthing steam mangohud goverlay obsidian telegram-desktop scrcpy v4l2loopback-dkms gamescope gamemode filezilla"
     [jtv]=""
 )
 
