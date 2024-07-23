@@ -9,7 +9,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces", "hyprland/mode", "custom/media", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": [ "backlight","cpu","memory","battery", "network", "battery#bat2", "pulseaudio", "tray" ],
+    "modules-right": [ "backlight","cpu","memory","battery", "network", "pulseaudio", "tray", "custom/keymap"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -72,10 +72,13 @@
     },
     "cpu": {
         "format": "{usage}% \uF2DB ",
-        "tooltip": false
+        "interval": 1
+
     },
     "memory": {
-        "format": "{}% \uf538"
+        "format": "{}% \uf538",
+        "interval": 1
+
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -87,8 +90,8 @@
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "{percent}% ",
-        "format-icons": ["", ""]
+        "format": "{percent}% {icon}",
+        "format-icons": ["\uF186", "\uF185"]
     },
     "battery": {
         "states": {
@@ -96,13 +99,14 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% ",
+        "format": "{capacity}% {icon}",
         "format-charging": "{capacity}%",
         "format-plugged": "{capacity}%",
-        "format-alt": "{time} "
+        "format-alt": "{time} ",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        // "format-icons": ["", "", "", "", ""]
+        "format-icons": ["\uF244", "\uF243", "\uF242", "\uF241", "\uF240"],
+        "interval": 1
     },
     "battery#bat2": {
         "bat": "BAT2"
@@ -130,9 +134,16 @@
         "return-type": "json",
         "max-length": 20,
         "escape": true,
-        "exec": "$HOME/unConfig/waybar/mediaplayer.py", // Script in resources folder
+        "exec": "$HOME/.config/waybar/mediaplayer.py", // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
         "on-click": "playerctl play-pause"
+    },
+
+    "custom/keymap": {
+        "format": " {} ",
+        "exec": "$HOME/.config/waybar/keymap.py",
+        "interval": 1,
+        "tooltip": false,
+        "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
     }
-    
 }
