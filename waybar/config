@@ -7,9 +7,9 @@
     // "height": 5, // Waybar height (to be removed for auto height) 
     // "width": 1280, // Waybar width
     // Choose the order of the modules
-    "modules-left": ["hyprland/workspaces", "hyprland/mode", "custom/media", "hyprland/window"],
+    "modules-left": ["hyprland/workspaces", "hyprland/mode", "custom/media", "hyprland/window", "backlight"],
     "modules-center": ["clock"],
-    "modules-right": [ "backlight","cpu","memory","battery", "network", "pulseaudio", "tray", "custom/keymap"],
+    "modules-right": ["cpu","memory","battery", "network", "pulseaudio", "tray", "custom/keymap"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -71,12 +71,12 @@
         "format-alt": "{:%d.%m.%Y}"
     },
     "cpu": {
-        "format": "{usage}% \uF2DB ",
+        "format": "{max_frequency} GHz | {usage}% \uF2DB ",
         "interval": 1
-
     },
     "memory": {
-        "format": "{}% \uf538",
+        "format": "{used:0.1f} / {total:0.0f} GB \uf538",
+        "tooltip-format": "{}%",
         "interval": 1
 
     },
@@ -113,11 +113,11 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr} \uf796",
+        "format-wifi": "{essid} ",
+        "format-ethernet": "{ipaddr}\uf796",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-alt": "{ifname}: {ipaddr}/{cidr} ({signalStrength}%)"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
