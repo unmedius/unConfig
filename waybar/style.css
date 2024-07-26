@@ -5,7 +5,7 @@
     /* font-family: "Roboto Mono Medium", Helvetica, Arial, sans-serif; */
 
     /* adjust font-size value to your liking: */
-    font-size: 14px;
+    font-size: 12px;
 
     min-height: 0;
 }
@@ -14,6 +14,7 @@ window#waybar {
     background-color: rgba(0, 0, 0, 0.9);
     /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
     color: #ffffff;
+    margin: 4px 4px;
     /* transition-property: background-color; */
     /* transition-duration: .5s; */
     /* border-radius: 0; */
@@ -42,7 +43,7 @@ window#waybar.chromium {
 } */
 
 #workspaces button {
-    /* padding: 0 0.4em; */
+    padding: 0 0.4em;
     /* background-color: transparent; */
     color: #ffffff;
     /* Use box-shadow instead of border so the text isn't offset */
@@ -89,7 +90,7 @@ window#waybar.chromium {
 
 #window,
 #workspaces {
-    margin: 0 4px;
+    margin: 0px 4px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -110,6 +111,7 @@ window#waybar.chromium {
 #battery {
     background-color: #000000;
     color: white;
+    margin-right: 1.5em;
 }
 
 #battery.charging {
@@ -156,7 +158,6 @@ label:focus {
 #network {
     background-color: #000000;
     color:white;
-
 }
 
 #network.disconnected {
@@ -177,6 +178,11 @@ label:focus {
     background-color: #66cc99;
     color: #2a5c45;
     min-width: 100px;
+}
+
+#custom-storage1 {
+    background-color: #000000;
+    color: white;
 }
 
 #custom-media.custom-spotify {
