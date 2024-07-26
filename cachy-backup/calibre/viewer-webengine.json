@@ -1,0 +1,139 @@
+{
+  "geometry-of-main_window_geometry": {
+    "frame_geometry": {
+      "height": 686,
+      "width": 674,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 686,
+      "width": 674,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 700,
+      "width": 685,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAAqEAAAKtAAAAAAAAAAAAAAKsAAACuwAAAAACAAAADXAAAAAAAAAAAAAAAqEAAAKt"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1440,
+        "width": 3440,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Huawei Technologies Co., Inc.",
+      "model": "ZQE-CBA",
+      "name": "DP-2",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1440,
+        "width": 3440
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 3440,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-viewer_image_popup_geometry": {
+    "frame_geometry": {
+      "height": 338,
+      "width": 674,
+      "x": 1279,
+      "y": 618
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 338,
+      "width": 674,
+      "x": 1279,
+      "y": 618
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 350,
+      "width": 685,
+      "x": 1279,
+      "y": 618
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAT/AAACagAAB6AAAAO7AAAE/wAAAmoAAAerAAADxwAAAAACAAAADXAAAAT/AAACagAAB6AAAAO7"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1440,
+        "width": 3440,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Huawei Technologies Co., Inc.",
+      "model": "ZQE-CBA",
+      "name": "DP-2",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1440,
+        "width": 3440
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 3440,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "main_window_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAIoA////+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAD/////AAAAmgD///8AAAABAAAAAAAAAAD8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAACDAP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAA/////wAAAPIA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAD/////AAAAFAD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAA/////wAAANcA////AAACogAAAq4AAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
+  },
+  "old_prefs_migrated": true,
+  "session_data": {
+    "controls_help_shown_count": 2,
+    "standalone_font_settings": {},
+    "standalone_misc_settings": {
+      "remember_last_read": true,
+      "remember_window_geometry": false,
+      "save_annotations_in_ebook": true,
+      "singleinstance": false
+    },
+    "standalone_recently_opened": [
+      {
+        "authors": [
+          "Ли Бардуго"
+        ],
+        "key": "/home/unmedius/Calibre Library/Li Bardugho/Krakh i voskhod (3)/Krakh i voskhod - Li Bardugho.fb2",
+        "pathtoebook": "/home/unmedius/Calibre Library/Li Bardugho/Krakh i voskhod (3)/Krakh i voskhod - Li Bardugho.fb2",
+        "timestamp": "2024-07-24T07:53:29.115Z",
+        "title": "Крах и восход"
+      },
+      {
+        "authors": [
+          "Ли Бардуго"
+        ],
+        "key": "/home/unmedius/Calibre Library/Li Bardugho/Dieviatyi Dom (2)/Dieviatyi Dom - Li Bardugho.fb2",
+        "pathtoebook": "/home/unmedius/Calibre Library/Li Bardugho/Dieviatyi Dom (2)/Dieviatyi Dom - Li Bardugho.fb2",
+        "timestamp": "2024-07-24T07:52:47.677Z",
+        "title": "Девятый Дом"
+      }
+    ]
+  }
+}

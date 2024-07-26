@@ -1,0 +1,83 @@
+[2024:07:26:16:23:38]: Info: Sunshine version: 0.23.1
+[2024:07:26:16:23:38]: Error: Couldn't load cuda: -1
+[2024:07:26:16:23:38]: Info: Found display [wayland-1]
+[2024:07:26:16:23:38]: Info: Found interface: zxdg_output_manager_v1(9) version 3
+[2024:07:26:16:23:38]: Info: Found interface: wl_output(46) version 4
+[2024:07:26:16:23:38]: Warning: Missing Wayland wire for wlr-export-dmabuf
+[2024:07:26:16:23:38]: Info: /dev/dri/card0 -> amdgpu
+[2024:07:26:16:23:38]: Info: Found display [wayland-1]
+[2024:07:26:16:23:38]: Info: Found display [wayland-1]
+[2024:07:26:16:23:38]: Info: Found interface: zxdg_output_manager_v1(9) version 3
+[2024:07:26:16:23:38]: Info: Found interface: wl_output(46) version 4
+[2024:07:26:16:23:38]: Info: Resolution: 3440x1440
+[2024:07:26:16:23:38]: Info: Name: DP-2
+[2024:07:26:16:23:38]: Info: Found monitor: Huawei Technologies Co., Inc. ZQE-CBA 0xC080F622 (DP-2)
+[2024:07:26:16:23:38]: Info: Offset: 0x0
+[2024:07:26:16:23:38]: Info: Logical size: 3440x1440
+[2024:07:26:16:23:38]: Info: -------- Start of KMS monitor list --------
+[2024:07:26:16:23:38]: Info: Monitor 0 is DP-2: Huawei Technologies Co., Inc. ZQE-CBA 0xC080F622 (DP-2)
+[2024:07:26:16:23:38]: Info: --------- End of KMS monitor list ---------
+[2024:07:26:16:23:38]: Info: // Testing for available encoders, this may generate errors. You can safely ignore those errors. //
+[2024:07:26:16:23:38]: Info: Trying encoder [nvenc]
+[2024:07:26:16:23:38]: Info: Screencasting with KMS
+[2024:07:26:16:23:38]: Info: /dev/dri/card0 -> amdgpu
+[2024:07:26:16:23:38]: Error: Couldn't find monitor [0]
+[2024:07:26:16:23:38]: Info: /dev/dri/card0 -> amdgpu
+[2024:07:26:16:23:38]: Error: Couldn't find monitor [0]
+[2024:07:26:16:23:38]: Info: System tray created
+[2024:07:26:16:23:38]: Info: Screencasting with KMS
+[2024:07:26:16:23:38]: Info: /dev/dri/card0 -> amdgpu
+[2024:07:26:16:23:38]: Error: Couldn't find monitor [0]
+[2024:07:26:16:23:38]: Info: /dev/dri/card0 -> amdgpu
+[2024:07:26:16:23:38]: Error: Couldn't find monitor [0]
+[2024:07:26:16:23:38]: Info: Encoder [nvenc] failed
+[2024:07:26:16:23:38]: Info: Trying encoder [vaapi]
+[2024:07:26:16:23:38]: Info: Screencasting with KMS
+[2024:07:26:16:23:38]: Info: /dev/dri/card0 -> amdgpu
+[2024:07:26:16:23:38]: Info: Found monitor for DRM screencasting
+[2024:07:26:16:23:38]: Info: Found connector ID [121]
+[2024:07:26:16:23:38]: Info: Found cursor plane [90]
+[2024:07:26:16:23:38]: Info: SDR color coding [Rec. 601]
+[2024:07:26:16:23:38]: Info: Color depth: 8-bit
+[2024:07:26:16:23:38]: Info: Color range: [JPEG]
+[2024:07:26:16:23:38]: Error: [h264_vaapi @ 0x57ca7c95ea40] No usable encoding entrypoint found for profile VAProfileH264High (7).
+[2024:07:26:16:23:38]: Info: Retrying with fallback configuration options for [h264_vaapi] after error: Function not implemented
+[2024:07:26:16:23:38]: Warning: [h264_vaapi @ 0x57ca7cba2e40] Driver does not support some wanted packed headers (wanted 0xd, found 0x1).
+[2024:07:26:16:23:38]: Info: SDR color coding [Rec. 601]
+[2024:07:26:16:23:38]: Info: Color depth: 8-bit
+[2024:07:26:16:23:38]: Info: Color range: [JPEG]
+[2024:07:26:16:23:38]: Error: [hevc_vaapi @ 0x57ca7cbfa340] No usable encoding entrypoint found for profile VAProfileHEVCMain (17).
+[2024:07:26:16:23:38]: Info: Retrying with fallback configuration options for [hevc_vaapi] after error: Function not implemented
+[2024:07:26:16:23:38]: Warning: [hevc_vaapi @ 0x57ca7cbe5340] Driver does not support some wanted packed headers (wanted 0xd, found 0x1).
+[2024:07:26:16:23:38]: Info: SDR color coding [Rec. 601]
+[2024:07:26:16:23:38]: Info: Color depth: 8-bit
+[2024:07:26:16:23:38]: Info: Color range: [JPEG]
+[2024:07:26:16:23:38]: Error: [av1_vaapi @ 0x57ca7cc0e7c0] No usable encoding entrypoint found for profile VAProfileAV1Profile0 (32).
+[2024:07:26:16:23:38]: Info: Retrying with fallback configuration options for [av1_vaapi] after error: Function not implemented
+[2024:07:26:16:23:38]: Warning: [av1_vaapi @ 0x57ca7cac4980] Multiple slices were requested but this codec does not support controlling slices.
+[2024:07:26:16:23:38]: Info: Screencasting with KMS
+[2024:07:26:16:23:38]: Info: /dev/dri/card0 -> amdgpu
+[2024:07:26:16:23:38]: Info: Found monitor for DRM screencasting
+[2024:07:26:16:23:38]: Info: Found connector ID [121]
+[2024:07:26:16:23:38]: Info: Found cursor plane [90]
+[2024:07:26:16:23:39]: Info: SDR color coding [Rec. 709]
+[2024:07:26:16:23:39]: Info: Color depth: 10-bit
+[2024:07:26:16:23:39]: Info: Color range: [JPEG]
+[2024:07:26:16:23:39]: Error: [hevc_vaapi @ 0x57ca7c924c40] No usable encoding entrypoint found for profile VAProfileHEVCMain10 (18).
+[2024:07:26:16:23:39]: Info: Retrying with fallback configuration options for [hevc_vaapi] after error: Function not implemented
+[2024:07:26:16:23:39]: Warning: [hevc_vaapi @ 0x57ca7c90c240] Driver does not support some wanted packed headers (wanted 0xd, found 0x1).
+[2024:07:26:16:23:39]: Info: SDR color coding [Rec. 709]
+[2024:07:26:16:23:39]: Info: Color depth: 10-bit
+[2024:07:26:16:23:39]: Info: Color range: [JPEG]
+[2024:07:26:16:23:39]: Error: [av1_vaapi @ 0x57ca7d35e2c0] No usable encoding entrypoint found for profile VAProfileAV1Profile0 (32).
+[2024:07:26:16:23:39]: Info: Retrying with fallback configuration options for [av1_vaapi] after error: Function not implemented
+[2024:07:26:16:23:39]: Warning: [av1_vaapi @ 0x57ca7c926480] Multiple slices were requested but this codec does not support controlling slices.
+[2024:07:26:16:23:39]: Info: 
+[2024:07:26:16:23:39]: Info: // Ignore any errors mentioned above, they are not relevant. //
+[2024:07:26:16:23:39]: Info: 
+[2024:07:26:16:23:39]: Info: Found H.264 encoder: h264_vaapi [vaapi]
+[2024:07:26:16:23:39]: Info: Found HEVC encoder: hevc_vaapi [vaapi]
+[2024:07:26:16:23:39]: Info: Found AV1 encoder: av1_vaapi [vaapi]
+[2024:07:26:16:23:39]: Info: Adding avahi service Sunshine
+[2024:07:26:16:23:39]: Info: Configuration UI available at [https://localhost:47990]
+[2024:07:26:16:23:39]: Info: Avahi service Sunshine successfully established.
