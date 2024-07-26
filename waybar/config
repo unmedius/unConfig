@@ -7,9 +7,9 @@
     // "height": 5, // Waybar height (to be removed for auto height) 
     // "width": 1280, // Waybar width
     // Choose the order of the modules
-    "modules-left": ["hyprland/workspaces", "hyprland/mode", "custom/media", "hyprland/window", "backlight"],
+    "modules-left": ["hyprland/workspaces", "hyprland/mode", "custom/media", "hyprland/window","backlight"],
     "modules-center": ["clock"],
-    "modules-right": ["cpu","memory","battery", "network", "pulseaudio", "tray", "custom/keymap"],
+    "modules-right": ["cpu", "memory", "battery", "custom/storage1", "network", "pulseaudio", "tray", "custom/keymap"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -130,7 +130,7 @@
         "on-click": "pavucontrol"
     },
     "custom/media": {
-        "format": " {}",
+        "format": "{}",
         "return-type": "json",
         "max-length": 20,
         "escape": true,
@@ -140,10 +140,19 @@
     },
 
     "custom/keymap": {
-        "format": " {} ",
+        "format": "{}",
         "exec": "$HOME/.config/waybar/keymap.py",
         "interval": 1,
         "tooltip": false,
         "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
+    },
+
+    "custom/storage1": {
+        "format": "{} ",
+        "format-alt": "{percentage}% ",
+        "format-alt-click": "click-right",
+        "return-type": "json",
+        "interval": 60,
+        "exec": "~/.config/waybar/storage.sh 1"
     }
 }
