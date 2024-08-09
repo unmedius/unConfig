@@ -43,6 +43,7 @@
         "bluetooth",
         "battery",
         "tray",
+        "custom/keymap",
         "custom/power"
     ],
 
@@ -58,6 +59,14 @@
     "custom/sp2": {
         "format": " |",
         "tooltip": false
+    },
+
+        "custom/keymap": {
+        "format": "{}",
+        "exec": "$HOME/.config/waybar/modules/keymap.py",
+        "interval": 1,
+        "tooltip": false,
+        "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
     },
 
     "bluetooth": {
@@ -216,7 +225,7 @@
         },
         "escape": true,
         "on-click": "playerctl play-pause",
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+        "exec": "$HOME/.config/waybar/modules/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
 

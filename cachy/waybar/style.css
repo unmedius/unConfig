@@ -91,6 +91,12 @@ window#waybar.hidden {
   border-radius: 9.5px;
   padding: 0px 10px;
 }
+#custom-keymap {
+  color: #e5e5e5;
+  background-color: #1e1e1e;
+  border-radius: 9.5px;
+  padding: 0px 10px;
+}
 #bluetooth {
   color: #87ceeb;
   background-color: #1e1e1e;
