@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S gnome-disk-utility firefox kitty telegram-desktop zoxide hypridle hyprlock yazi docker docker-compose distrobox neovim realtime-privileges nautilus
+sudo pacman -S gnome-disk-utility firefox kitty telegram-desktop zoxide hypridle hyprlock yazi docker docker-compose distrobox neovim realtime-privileges nautilus virt-manager qemu qbittorrent freerdp netcat flatpak
 
 sudo ufw allow ssh
 
@@ -13,6 +13,8 @@ rm -rf rofi-themes-collection
 
 sudo usermod -aG realtime $USER
 sudo usermod -aG docker $USER
+sudo usermod -aG libvirt $USER
+sudo systemctl enable libvirtd.service libvirtd.socket
 
 git config --global credential.helper store
 git config --global user.name $USER
