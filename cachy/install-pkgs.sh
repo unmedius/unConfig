@@ -1,8 +1,10 @@
 #!/bin/bash
 
-sudo pacman -S gnome-disk-utility firefox kitty telegram-desktop zoxide hypridle hyprlock yazi docker docker-compose distrobox neovim realtime-privileges nautilus virt-manager qemu qbittorrent freerdp netcat flatpak
+sudo pacman -S gnome-disk-utility firefox kitty telegram-desktop zoxide hypridle hyprlock yazi docker docker-compose distrobox neovim realtime-privileges nautilus virt-manager qemu qbittorrent freerdp netcat flatpak blueman mangohud goverlay
 
-sudo ufw allow ssh
+paru -S game-devices-udev
+
+sudo ufw disable
 
 git clone https://github.com/NvChad/starter ~/.config/nvim
 
@@ -14,7 +16,10 @@ rm -rf rofi-themes-collection
 sudo usermod -aG realtime $USER
 sudo usermod -aG docker $USER
 sudo usermod -aG libvirt $USER
+
 sudo systemctl enable libvirtd.service libvirtd.socket
+sudo systemctl enable bluetooth.service
+sudo systemctl enable docker.service
 
 git config --global credential.helper store
 git config --global user.name $USER
