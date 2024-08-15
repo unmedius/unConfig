@@ -21,7 +21,12 @@ DEVICE_TYPE=$1
 
 # Copy base configurations
 cp -rf cachy/base/* ~/.config/
-cp -rf paper ~/.config/ 
+
+if [~ -d "~/.config/paper"]
+    cp -rf paper ~/.config/
+else
+    echo "Wallpapers are already installed"
+fi
 
 # Apply specific configuration based on device type
 if [ "$DEVICE_TYPE" == "laptop" ]; then
