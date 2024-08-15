@@ -1,0 +1,49 @@
+{
+    // -------------------------------------------------------------------------
+    // Global configuration
+    // -------------------------------------------------------------------------
+    
+    "include": "$HOME/.config/waybar/modules-hypr",
+
+    "layer": "top",
+    "position": "top",
+    //"height": 20,
+
+    "margin-left": 10,
+    "margin-bottom": 0,
+    "margin-right": 10,
+
+    "spacing": 5, // Gaps between modules (4px)
+
+    "modules-left": [
+        // "custom/rofi",
+        "hyprland/workspaces",
+        //"hyprland/submap",
+        "temperature",
+        "custom/media",
+        "idle_inhibitor",
+        "custom/screenshot_t"
+        //"mpd"
+    ],
+    "modules-center": [
+        //"hyprland/window"
+        "clock#date",
+        "custom/weather"
+        //"custom/gammastep"
+    ],
+    "modules-right": [
+        "custom/storage1",
+        "custom/storage2",
+        "memory",
+        "cpu",
+        //"pulseaudio",
+        "backlight",
+        "wireplumber",
+        "network",
+        "bluetooth",
+        "battery",
+        "tray",
+        "custom/keymap",
+        "custom/power"
+    ]
+}

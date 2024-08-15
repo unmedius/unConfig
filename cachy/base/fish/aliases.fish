@@ -1,3 +1,9 @@
+function cd
+    z $argv
+    ls
+end
+
+
 function gacp
     git add .
     echo "Enter a commit message:"
@@ -5,4 +11,3 @@ function gacp
     git commit -m "$user_message"
     git push origin main
 end
-
