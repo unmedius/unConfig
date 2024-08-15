@@ -24,7 +24,7 @@
         "temperature",
         "idle_inhibitor",
         "custom/screenshot_t",
-        "custom/media",
+        "custom/media"
         //"mpd"
     ],
     "modules-center": [
@@ -35,15 +35,14 @@
     ],
     "modules-right": [
         "custom/storage1",
-        "custom/storage2",
         //"pulseaudio",
         "backlight",
         "wireplumber",
         "network",
         "bluetooth",
-        "battery",
         "tray",
         "custom/keymap",
+        "battery",
         "custom/power"
     ]
 }
