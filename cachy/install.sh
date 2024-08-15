@@ -12,6 +12,7 @@ DEVICE_TYPE=$1
 
 # Copy base configurations
 cp -rf base/* ~/.config/
+cp -rf ../paper ~/.config/ 
 
 # Apply specific configuration based on device type
 if [ "$DEVICE_TYPE" == "laptop" ]; then
