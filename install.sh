@@ -22,7 +22,7 @@ DEVICE_TYPE=$1
 # Copy base configurations
 cp -rf cachy/base/* ~/.config/
 
-if [~ -d "~/.config/paper"]
+if  [! -d "~/.config/paper"]
     cp -rf paper ~/.config/
 else
     echo "Wallpapers are already installed"
