@@ -1,8 +1,8 @@
-function git_auto
+function gacp
     git add .
     echo "Enter a commit message:"
     read user_message
     git commit -m "$user_message"
-    git commit -m "clean stuff"
+    git push origin main
 end
 
