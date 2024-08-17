@@ -74,16 +74,16 @@
         "interval": 1,
         //"format": " {}%", // Icon: microchip
         "format": "{max_frequency}GHz<span color=\"darkgray\"> | {usage}%</span>",
-        "max-length": 14,
-        "min-length": 14
+        "max-length": 15,
+        "min-length": 15
     },
 
     "memory": {
         "interval": 1,
         "format": "  {used:0.2f}GB <span color=\"darkgray\">| {percentage}%</span>",
         "on-click": "kitty -e btop",
-        "max-length": 14,
-        "min-length": 14
+        "max-length": 15,
+        "min-length": 15
     },
 
     "battery": {
