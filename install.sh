@@ -44,7 +44,7 @@ echo "Configuration applied for $DEVICE_TYPE."
 # Check if packages are already installed
 
 packages=(
-    gnome-disk-utility firefox kitty telegram-desktop zoxide hypridle hyprlock yazi docker docker-compose distrobox neovim realtime-privileges nautilus virt-manager qemu-base qbittorrent freerdp gnu-netcat flatpak  mangohud goverlay calc blueman blueberry
+    gnome-disk-utility firefox kitty telegram-desktop zoxide hypridle hyprlock yazi docker docker-compose distrobox neovim realtime-privileges nautilus virt-manager qemu-base qbittorrent freerdp gnu-netcat flatpak mangohud goverlay calc blueman blueberry
 )
 
 for package in "${packages[@]}"; do
@@ -106,6 +106,7 @@ sudo systemctl enable --now libvirtd.service
 sudo systemctl enable --now libvirtd.socket
 sudo systemctl enable --now bluetooth.service
 sudo systemctl enable --now docker.service
+sudo systemctl enable --now sshd.service
 
 # Git configuration
 git config --global credential.helper store
