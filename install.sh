@@ -44,7 +44,7 @@ echo "Configuration applied for $DEVICE_TYPE."
 # Check if packages are already installed
 
 packages=(
-    gnome-disk-utility firefox kitty telegram-desktop zoxide hypridle hyprlock yazi docker docker-compose distrobox neovim realtime-privileges nautilus virt-manager qemu-base qbittorrent freerdp gnu-netcat flatpak mangohud goverlay calc blueman blueberry
+    gnome-disk-utility firefox kitty telegram-desktop zoxide hypridle hyprlock yazi docker docker-compose distrobox neovim realtime-privileges nautilus virt-manager qemu-base qbittorrent freerdp gnu-netcat flatpak gnome-browser-connector mangohud goverlay calc blueman blueberry
 )
 
 for package in "${packages[@]}"; do
